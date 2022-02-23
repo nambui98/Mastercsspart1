@@ -1,0 +1,57 @@
+@import "abstracts/_funtions.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_variables.scss";
+
+@import "base/_base.scss";
+@import "base/_animation.scss";
+@import "base/_typography.scss";
+@import "base/_utilities.scss";
+
+@import "components/_button.scss";
+
+@import "pages/_home.scss";
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.heading-primary{
+    color:$color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation: moveInLeft 1s;
+        animation-timing-function: ease-out;
+    }
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+    }
+}
+
+
+
